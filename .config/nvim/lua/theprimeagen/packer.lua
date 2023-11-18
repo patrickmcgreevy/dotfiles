@@ -47,6 +47,16 @@ return require('packer').startup(function(use)
             {'nvim-tree/nvim-web-devicons'}
         }
 	})
+
+    -- Debugger
+    use {
+        'sebdah/vim-delve'
+    }
+    use 'mfussenegger/nvim-dap'
+    use 'leoluz/nvim-dap-go'
+    use 'rcarriga/nvim-dap-ui'
+    -- LSP stuff
+    use 'folke/neodev.nvim'
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v1.x',
