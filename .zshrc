@@ -1,3 +1,8 @@
+# Download Znap, if it's not there yet.
+[[ -r ~/src/git/znap-repos/znap/znap.zsh ]] ||
+    git clone --depth 1 -- \
+        https://github.com/marlonrichert/zsh-snap.git ~/src/git/znap-repos/znap
+source ~/src/git/znap-repos/znap/znap.zsh  # Start Znap
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -112,3 +117,10 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ZSH_TMUX_AUTOSTART=true
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=23'
+
+znap source marlonrichert/zsh-autocomplete
+znap source zsh-users/zsh-autosuggestions
+znap source zsh-users/zsh-syntax-highlighting
+znap source agkozak/zsh-z
