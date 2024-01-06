@@ -124,3 +124,10 @@ znap source marlonrichert/zsh-autocomplete
 znap source zsh-users/zsh-autosuggestions
 znap source zsh-users/zsh-syntax-highlighting
 znap source agkozak/zsh-z
+
+if [[ ! -d "/run/tmux" ]]; then
+  sudo mkdir -p /run/tmux 
+  sudo chmod 0777 /run/tmux
+fi
+
+tmux
