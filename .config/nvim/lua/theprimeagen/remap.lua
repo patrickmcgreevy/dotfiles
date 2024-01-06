@@ -28,3 +28,6 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- Window commands
 vim.keymap.set("n", "<leader>ww", "<C-w><C-w>")
+vim.keymap.set("n", "<leader>wc", "<C-w>c")
+
+
